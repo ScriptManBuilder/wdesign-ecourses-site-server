@@ -8,6 +8,8 @@ async function bootstrap() {
   const allowedOrigins = process.env.ALLOWED_ORIGINS 
     ? process.env.ALLOWED_ORIGINS.split(',')
     : [
+        'https://www.design-ecourses.com',    // Добавить HTTPS
+        'https://design-ecourses.com',   
         'https://wdesign-ecourses-site-server.onrender.com',
         'http://design-ecourses.com',
         'http://www.design-ecourses.com',
