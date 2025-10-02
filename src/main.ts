@@ -8,11 +8,11 @@ async function bootstrap() {
   const allowedOrigins = process.env.ALLOWED_ORIGINS 
     ? process.env.ALLOWED_ORIGINS.split(',')
     : [
-        'https://www.design-ecourses.com',    // Добавить HTTPS
-        'https://design-ecourses.com',   
+        'https://www.design-ecourses.com',           // HTTPS с www
+        'https://design-ecourses.com',               // HTTPS без www
+        'http://www.design-ecourses.com',            // HTTP с www (для локальной разработки)
+        'http://design-ecourses.com',                // HTTP без www (для локальной разработки)
         'https://wdesign-ecourses-site-server.onrender.com',
-        'http://design-ecourses.com',
-        'http://www.design-ecourses.com',
         'https://wdesign-ecourses-site-client.vercel.app',
         'http://localhost:3000',
         'http://localhost:3001',
