@@ -8,13 +8,15 @@ async function bootstrap() {
   const allowedOrigins = process.env.ALLOWED_ORIGINS 
     ? process.env.ALLOWED_ORIGINS.split(',')
     : [
+        'https://wdesign-ecourses-site-server.onrender.com',
+        'http://design-ecourses.com',
+        'http://www.design-ecourses.com',
+        'https://wdesign-ecourses-site-client.vercel.app',
         'http://localhost:3000',
         'http://localhost:3001',
         'http://localhost:3002',
-        'http://localhost:3005',
-        'https://webdesign-ecourses.com',
-        'https://www.webdesign-ecourses.com',
-        'https://api.webdesign-ecourses.com'
+        'http://localhost:3005'
+       
       ]; // fallback для разработки
 
   // Настройка CORS
